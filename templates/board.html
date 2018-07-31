@@ -1,0 +1,14 @@
+<table style="width:100%">
+      <tr>
+	      <th>게시글</th>
+	      <th>게시자</th> 
+	      <th>시간</th>
+      </tr>
+      {%for row in rows%}
+      <li>
+	      <td><a href="/board/{{row[0]}}">{{row[0]}}</a></td>
+	      <td><a href="/profile/{{row[1]}}">{{row[1]}}</a></td>
+	      <td>{{row[2]}}</td>
+      </li>
+      {% endfor %}
+</table>
